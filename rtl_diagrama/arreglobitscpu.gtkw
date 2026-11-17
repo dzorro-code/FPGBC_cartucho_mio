@@ -1,0 +1,151 @@
+[*]
+[*] GTKWave Analyzer v3.3.117 (w)1999-2023 BSI
+[*] Fri Nov 13 05:40:02 2026
+[*]
+[dumpfile] "/home/felipe-zorro/semestre_8/digital2/arreglobitscpu_modular/rtl_diagrama/arreglobitscpu.vcd"
+[dumpfile_mtime] "Thu Nov 12 17:31:03 2026"
+[dumpfile_size] 386377
+[savefile] "/home/felipe-zorro/semestre_8/digital2/arreglobitscpu_modular/rtl_diagrama/arreglobitscpu.gtkw"
+[timestart] 1621240
+[size] 3072 1782
+[pos] -1037 -593
+*-12.000000 1645000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] tb_arreglobitscpu.
+[treeopen] tb_arreglobitscpu.dut.
+[sst_width] 372
+[signals_width] 332
+[sst_expanded] 1
+[sst_vpaned_height] 538
+@28
+[color] 3
+tb_arreglobitscpu.CLK
+[color] 3
+tb_arreglobitscpu.RST
+@24
+[color] 3
+tb_arreglobitscpu.dut.DIR_MEM_IN[15:0]
+[color] 3
+tb_arreglobitscpu.MEM_RSTRB
+@28
+[color] 3
+tb_arreglobitscpu.CS
+tb_arreglobitscpu.MEM_RBUSY
+@800028
+tb_arreglobitscpu.dut.receive_register.DATA_P[31:0]
+@28
+(0)tb_arreglobitscpu.dut.receive_register.DATA_P[31:0]
+(1)tb_arreglobitscpu.dut.receive_register.DATA_P[31:0]
+(2)tb_arreglobitscpu.dut.receive_register.DATA_P[31:0]
+(3)tb_arreglobitscpu.dut.receive_register.DATA_P[31:0]
+(4)tb_arreglobitscpu.dut.receive_register.DATA_P[31:0]
+(5)tb_arreglobitscpu.dut.receive_register.DATA_P[31:0]
+(6)tb_arreglobitscpu.dut.receive_register.DATA_P[31:0]
+(7)tb_arreglobitscpu.dut.receive_register.DATA_P[31:0]
+(8)tb_arreglobitscpu.dut.receive_register.DATA_P[31:0]
+(9)tb_arreglobitscpu.dut.receive_register.DATA_P[31:0]
+(10)tb_arreglobitscpu.dut.receive_register.DATA_P[31:0]
+(11)tb_arreglobitscpu.dut.receive_register.DATA_P[31:0]
+(12)tb_arreglobitscpu.dut.receive_register.DATA_P[31:0]
+(13)tb_arreglobitscpu.dut.receive_register.DATA_P[31:0]
+(14)tb_arreglobitscpu.dut.receive_register.DATA_P[31:0]
+(15)tb_arreglobitscpu.dut.receive_register.DATA_P[31:0]
+(16)tb_arreglobitscpu.dut.receive_register.DATA_P[31:0]
+(17)tb_arreglobitscpu.dut.receive_register.DATA_P[31:0]
+(18)tb_arreglobitscpu.dut.receive_register.DATA_P[31:0]
+(19)tb_arreglobitscpu.dut.receive_register.DATA_P[31:0]
+(20)tb_arreglobitscpu.dut.receive_register.DATA_P[31:0]
+(21)tb_arreglobitscpu.dut.receive_register.DATA_P[31:0]
+(22)tb_arreglobitscpu.dut.receive_register.DATA_P[31:0]
+(23)tb_arreglobitscpu.dut.receive_register.DATA_P[31:0]
+(24)tb_arreglobitscpu.dut.receive_register.DATA_P[31:0]
+(25)tb_arreglobitscpu.dut.receive_register.DATA_P[31:0]
+(26)tb_arreglobitscpu.dut.receive_register.DATA_P[31:0]
+(27)tb_arreglobitscpu.dut.receive_register.DATA_P[31:0]
+(28)tb_arreglobitscpu.dut.receive_register.DATA_P[31:0]
+(29)tb_arreglobitscpu.dut.receive_register.DATA_P[31:0]
+(30)tb_arreglobitscpu.dut.receive_register.DATA_P[31:0]
+(31)tb_arreglobitscpu.dut.receive_register.DATA_P[31:0]
+@1001200
+-group_end
+@22
+[color] 5
+tb_arreglobitscpu.dut.receive_register.DATA_C[7:0]
+@28
+[color] 5
+tb_arreglobitscpu.CS_CART
+[color] 5
+tb_arreglobitscpu.dut.control.RE_CART
+tb_arreglobitscpu.dut.LD_REG
+tb_arreglobitscpu.dut.SH_REG
+tb_arreglobitscpu.dut.RST_DP
+tb_arreglobitscpu.dut.INC_COUNT
+tb_arreglobitscpu.RE_CART
+tb_arreglobitscpu.dut.Z_BYTE
+[color] 3
+tb_arreglobitscpu.CLK
+[color] 3
+tb_arreglobitscpu.RST
+@24
+[color] 3
+tb_arreglobitscpu.dut.DIR_MEM_IN[15:0]
+[color] 3
+tb_arreglobitscpu.MEM_RSTRB
+@28
+[color] 3
+tb_arreglobitscpu.CS
+tb_arreglobitscpu.MEM_RBUSY
+@800028
+tb_arreglobitscpu.dut.receive_register.DATA_P[31:0]
+@28
+(0)tb_arreglobitscpu.dut.receive_register.DATA_P[31:0]
+(1)tb_arreglobitscpu.dut.receive_register.DATA_P[31:0]
+(2)tb_arreglobitscpu.dut.receive_register.DATA_P[31:0]
+(3)tb_arreglobitscpu.dut.receive_register.DATA_P[31:0]
+(4)tb_arreglobitscpu.dut.receive_register.DATA_P[31:0]
+(5)tb_arreglobitscpu.dut.receive_register.DATA_P[31:0]
+(6)tb_arreglobitscpu.dut.receive_register.DATA_P[31:0]
+(7)tb_arreglobitscpu.dut.receive_register.DATA_P[31:0]
+(8)tb_arreglobitscpu.dut.receive_register.DATA_P[31:0]
+(9)tb_arreglobitscpu.dut.receive_register.DATA_P[31:0]
+(10)tb_arreglobitscpu.dut.receive_register.DATA_P[31:0]
+(11)tb_arreglobitscpu.dut.receive_register.DATA_P[31:0]
+(12)tb_arreglobitscpu.dut.receive_register.DATA_P[31:0]
+(13)tb_arreglobitscpu.dut.receive_register.DATA_P[31:0]
+(14)tb_arreglobitscpu.dut.receive_register.DATA_P[31:0]
+(15)tb_arreglobitscpu.dut.receive_register.DATA_P[31:0]
+(16)tb_arreglobitscpu.dut.receive_register.DATA_P[31:0]
+(17)tb_arreglobitscpu.dut.receive_register.DATA_P[31:0]
+(18)tb_arreglobitscpu.dut.receive_register.DATA_P[31:0]
+(19)tb_arreglobitscpu.dut.receive_register.DATA_P[31:0]
+(20)tb_arreglobitscpu.dut.receive_register.DATA_P[31:0]
+(21)tb_arreglobitscpu.dut.receive_register.DATA_P[31:0]
+(22)tb_arreglobitscpu.dut.receive_register.DATA_P[31:0]
+(23)tb_arreglobitscpu.dut.receive_register.DATA_P[31:0]
+(24)tb_arreglobitscpu.dut.receive_register.DATA_P[31:0]
+(25)tb_arreglobitscpu.dut.receive_register.DATA_P[31:0]
+(26)tb_arreglobitscpu.dut.receive_register.DATA_P[31:0]
+(27)tb_arreglobitscpu.dut.receive_register.DATA_P[31:0]
+(28)tb_arreglobitscpu.dut.receive_register.DATA_P[31:0]
+(29)tb_arreglobitscpu.dut.receive_register.DATA_P[31:0]
+(30)tb_arreglobitscpu.dut.receive_register.DATA_P[31:0]
+(31)tb_arreglobitscpu.dut.receive_register.DATA_P[31:0]
+@1001200
+-group_end
+@22
+[color] 5
+tb_arreglobitscpu.dut.receive_register.DATA_C[7:0]
+[color] 5
+tb_arreglobitscpu.dut.address.DIR_MEM_OUT[13:0]
+@28
+[color] 5
+tb_arreglobitscpu.CS_CART
+[color] 5
+tb_arreglobitscpu.dut.control.RE_CART
+tb_arreglobitscpu.dut.LD_REG
+tb_arreglobitscpu.dut.SH_REG
+tb_arreglobitscpu.dut.RST_DP
+tb_arreglobitscpu.dut.INC_COUNT
+tb_arreglobitscpu.RE_CART
+tb_arreglobitscpu.dut.Z_BYTE
+[pattern_trace] 1
+[pattern_trace] 0

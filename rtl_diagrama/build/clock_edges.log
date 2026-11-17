@@ -1,0 +1,2 @@
+PASS flancos: FSM posedge; carga, shift, contador y reset del datapath negedge.
+tb_clock_edges.v:40: $finish called at 41000 (1ps)

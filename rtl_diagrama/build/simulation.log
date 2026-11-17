@@ -1,0 +1,3 @@
+VCD info: dumpfile arreglobitscpu.vcd opened for output.
+PASS: 72 transacciones completas; 2824 ciclos comprobados; FSM posedge, datapath negedge, controles por estado, concatenacion, 4 LOAD/3 SHIFT, reset, solicitudes y datos.
+tb_arreglobitscpu.v:162: $finish called at 28282000 (1ps)

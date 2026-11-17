@@ -1,0 +1,144 @@
+
+-- Running command `read_verilog top.v controller.v rcv_data_register.v byte_counter.v byte_comparator.v address_generator.v; hierarchy -check -top arreglobitscpu; proc; check' --
+
+1. Executing Verilog-2005 frontend: top.v
+Parsing Verilog input from `top.v' to AST representation.
+Generating RTLIL representation for module `\arreglobitscpu'.
+Successfully finished Verilog frontend.
+
+2. Executing Verilog-2005 frontend: controller.v
+Parsing Verilog input from `controller.v' to AST representation.
+Generating RTLIL representation for module `\control_fsm'.
+Successfully finished Verilog frontend.
+
+3. Executing Verilog-2005 frontend: rcv_data_register.v
+Parsing Verilog input from `rcv_data_register.v' to AST representation.
+Generating RTLIL representation for module `\rcv_data_register'.
+Successfully finished Verilog frontend.
+
+4. Executing Verilog-2005 frontend: byte_counter.v
+Parsing Verilog input from `byte_counter.v' to AST representation.
+Generating RTLIL representation for module `\byte_counter'.
+Successfully finished Verilog frontend.
+
+5. Executing Verilog-2005 frontend: byte_comparator.v
+Parsing Verilog input from `byte_comparator.v' to AST representation.
+Generating RTLIL representation for module `\byte_comparator'.
+Successfully finished Verilog frontend.
+
+6. Executing Verilog-2005 frontend: address_generator.v
+Parsing Verilog input from `address_generator.v' to AST representation.
+Generating RTLIL representation for module `\address_generator'.
+Successfully finished Verilog frontend.
+
+7. Executing HIERARCHY pass (managing design hierarchy).
+
+7.1. Analyzing design hierarchy..
+Top module:  \arreglobitscpu
+Used module:     \address_generator
+Used module:     \byte_comparator
+Used module:     \byte_counter
+Used module:     \rcv_data_register
+Used module:     \control_fsm
+
+7.2. Analyzing design hierarchy..
+Top module:  \arreglobitscpu
+Used module:     \address_generator
+Used module:     \byte_comparator
+Used module:     \byte_counter
+Used module:     \rcv_data_register
+Used module:     \control_fsm
+Removed 0 unused modules.
+
+8. Executing PROC pass (convert processes to netlists).
+
+8.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+8.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 1 switch rules as full_case in process $proc$byte_counter.v:7$7 in module byte_counter.
+Marked 2 switch rules as full_case in process $proc$rcv_data_register.v:8$5 in module rcv_data_register.
+Marked 3 switch rules as full_case in process $proc$controller.v:16$3 in module control_fsm.
+Marked 1 switch rules as full_case in process $proc$controller.v:12$2 in module control_fsm.
+Removed a total of 0 dead cases.
+
+8.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 1 redundant assignment.
+Promoted 8 assignments to connections.
+
+8.4. Executing PROC_INIT pass (extract init attributes).
+
+8.5. Executing PROC_ARST pass (detect async resets in processes).
+
+8.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+<suppressed ~9 debug messages>
+
+8.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\byte_counter.$proc$byte_counter.v:7$7'.
+     1/1: $0\BYTE_COUNT[2:0]
+Creating decoders for process `\rcv_data_register.$proc$rcv_data_register.v:8$5'.
+     1/2: $0\DATA_P[31:0] [31:8]
+     2/2: $0\DATA_P[31:0] [7:0]
+Creating decoders for process `\control_fsm.$proc$controller.v:16$3'.
+     1/9: $3\next_state[3:0]
+     2/9: $2\next_state[3:0]
+     3/9: $1\next_state[3:0]
+     4/9: $1\INC_COUNT[0:0]
+     5/9: $1\RST_DP[0:0]
+     6/9: $1\SH_REG[0:0]
+     7/9: $1\LD_REG[0:0]
+     8/9: $1\RE_CART[0:0]
+     9/9: $1\MEM_RBUSY[0:0]
+Creating decoders for process `\control_fsm.$proc$controller.v:12$2'.
+     1/1: $0\state[3:0]
+
+8.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+No latch inferred for signal `\control_fsm.\MEM_RBUSY' from process `\control_fsm.$proc$controller.v:16$3'.
+No latch inferred for signal `\control_fsm.\CS_CART' from process `\control_fsm.$proc$controller.v:16$3'.
+No latch inferred for signal `\control_fsm.\RE_CART' from process `\control_fsm.$proc$controller.v:16$3'.
+No latch inferred for signal `\control_fsm.\LD_REG' from process `\control_fsm.$proc$controller.v:16$3'.
+No latch inferred for signal `\control_fsm.\SH_REG' from process `\control_fsm.$proc$controller.v:16$3'.
+No latch inferred for signal `\control_fsm.\RST_DP' from process `\control_fsm.$proc$controller.v:16$3'.
+No latch inferred for signal `\control_fsm.\INC_COUNT' from process `\control_fsm.$proc$controller.v:16$3'.
+No latch inferred for signal `\control_fsm.\next_state' from process `\control_fsm.$proc$controller.v:16$3'.
+
+8.9. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `\byte_counter.\BYTE_COUNT' using process `\byte_counter.$proc$byte_counter.v:7$7'.
+  created $dff cell `$procdff$125' with negative edge clock.
+Creating register for signal `\rcv_data_register.\DATA_P' using process `\rcv_data_register.$proc$rcv_data_register.v:8$5'.
+  created $dff cell `$procdff$126' with negative edge clock.
+Creating register for signal `\control_fsm.\state' using process `\control_fsm.$proc$controller.v:12$2'.
+  created $dff cell `$procdff$127' with positive edge clock.
+
+8.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+8.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Found and cleaned up 2 empty switches in `\byte_counter.$proc$byte_counter.v:7$7'.
+Removing empty process `byte_counter.$proc$byte_counter.v:7$7'.
+Found and cleaned up 3 empty switches in `\rcv_data_register.$proc$rcv_data_register.v:8$5'.
+Removing empty process `rcv_data_register.$proc$rcv_data_register.v:8$5'.
+Found and cleaned up 3 empty switches in `\control_fsm.$proc$controller.v:16$3'.
+Removing empty process `control_fsm.$proc$controller.v:16$3'.
+Found and cleaned up 1 empty switch in `\control_fsm.$proc$controller.v:12$2'.
+Removing empty process `control_fsm.$proc$controller.v:12$2'.
+Cleaned up 9 empty switches.
+
+8.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module address_generator.
+Optimizing module byte_comparator.
+Optimizing module byte_counter.
+Optimizing module rcv_data_register.
+<suppressed ~1 debug messages>
+Optimizing module control_fsm.
+<suppressed ~2 debug messages>
+Optimizing module arreglobitscpu.
+
+9. Executing CHECK pass (checking for obvious problems).
+Checking module address_generator...
+Checking module byte_comparator...
+Checking module byte_counter...
+Checking module rcv_data_register...
+Checking module control_fsm...
+Checking module arreglobitscpu...
+Found and reported 0 problems.
